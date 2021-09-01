@@ -2,6 +2,7 @@
   "name": "hacker",
   "version": "1.11.0",
   "private": true,
+  "homepage": "https://pratham82.github.io/Tech-blog",
   "description": "gatsby-starter-chronoblog-hacker",
   "keywords": [],
   "license": "MIT",
@@ -9,7 +10,9 @@
   "scripts": {
     "build": "gatsby build",
     "clean": "gatsby clean",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "gatsby": "^2.23.3",
@@ -24,6 +27,7 @@
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.3.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "gh-pages": "^3.2.3",
     "prettier": "^1.18.2"
   },
   "engines": {
